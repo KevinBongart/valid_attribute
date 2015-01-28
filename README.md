@@ -1,4 +1,4 @@
-# valid_attribute [![Circle CI](https://circleci.com/gh/KevinBongart/valid_attribute/tree/master.svg?style=svg)](https://circleci.com/gh/KevinBongart/valid_attribute/tree/master)
+# valid_attribute [![Circle CI](https://circleci.com/gh/KevinBongart/valid_attribute/tree/master.svg?style=svg)](https://circleci.com/gh/KevinBongart/valid_attribute/tree/master) [![Code Climate](https://codeclimate.com/github/KevinBongart/valid_attribute/badges/gpa.svg)](https://codeclimate.com/github/KevinBongart/valid_attribute)
 
 Let's say you have:
 

@@ -36,4 +36,6 @@ product.valid_attribute?(name: :format, company: :presence) # => true
 
 Time to go crazy:
 
-`gem 'valid_attribute', github: 'kevinbongart/valid_attribute'`
+```ruby
+gem 'valid_attribute', github: 'kevinbongart/valid_attribute'
+```

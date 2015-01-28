@@ -4,25 +4,17 @@ module ActiveRecord
       errors.clear
 
       attributes.flatten!
+      attributes = attributes.first if attributes.first.is_a?(Hash)
 
-      if attributes.first.is_a?(Hash)
-        attributes.first.each do |attribute, validator_types|
+      attributes.each do |attribute, validator_types|
+        validators = self.class.validators_on(attribute)
+
+        if validator_types.present?
           validator_types = Array(validator_types)
-
-          validators = self.class.validators_on(attribute).select do |validator|
-            validator.kind.in?(validator_types)
-          end
-
-          validators.each do |validator|
-            validator.validate(self)
-          end
+          validators.select! { |validator| validator.kind.in?(validator_types) }
         end
-      else
-        Array(attributes).each do |attribute|
-          self.class.validators_on(attribute).each do |validator|
-            validator.validate(self)
-          end
-        end
+
+        validators.each { |validator| validator.validate(self) }
       end
 
       errors.empty?

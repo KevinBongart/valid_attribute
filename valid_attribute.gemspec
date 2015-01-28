@@ -9,12 +9,12 @@ Gem::Specification.new do |s|
   s.version     = ValidAttribute::VERSION
   s.authors     = ["Kevin Bongart"]
   s.email       = ["contact@kevinbongart.net"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ValidAttribute."
-  s.description = "TODO: Description of ValidAttribute."
+  s.homepage    = "https://github.com/KevinBongart/valid_attribute"
+  s.summary     = "Validate Active Records, one attribute at a time."
+  s.description = "Validate Active Records, one attribute at a time."
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 4.2.0"
 

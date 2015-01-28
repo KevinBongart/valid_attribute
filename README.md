@@ -34,4 +34,4 @@ product.valid_attribute?(name: [:format, :uniqueness])      # => true
 product.valid_attribute?(name: :format, company: :presence) # => true
 ```
 
-I'm sure you're excited! Let me refactor this a bit, though.
+Time to go crazy.

@@ -1,5 +1,7 @@
 # valid_attribute
 
+[![Circle CI](https://circleci.com/gh/KevinBongart/valid_attribute/tree/master.svg?style=svg)](https://circleci.com/gh/KevinBongart/valid_attribute/tree/master)
+
 Let's say you have:
 
 ```ruby

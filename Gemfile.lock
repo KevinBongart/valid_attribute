@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    valid_attribute (1.0.0)
-      rails (~> 4.2.0)
+    valid_attribute (1.0.1)
+      rails (>= 4.2.0)
 
 GEM
   remote: https://rubygems.org/
